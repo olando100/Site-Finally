@@ -10,9 +10,10 @@
         $address = $_POST['address'];
        
         $gender = $_POST['gender_id'];
+        $email = $_POST['email'];
 
         //Call Crud function
-        $result = $crud->editAttendee($id,$fname, $lname, $dob, $address,$contact,$gender);
+        $result = $crud->editAttendee($id,$fname, $lname, $dob, $address,$contact,$gender,$email);
         // Redirect to index.php
         if($result){
             header("Location: viewrecords.php");

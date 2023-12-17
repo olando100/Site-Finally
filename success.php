@@ -11,6 +11,7 @@
         $dob = $_POST['dob'];
         $address = $_POST['address'];
         $gender = $_POST['gender'];
+        $email = $_POST['email'];
 
         $orig_file = $_FILES["avatar"]["tmp_name"];
         $ext = pathinfo($_FILES["avatar"]["name"], PATHINFO_EXTENSION);
@@ -19,7 +20,7 @@
         move_uploaded_file($orig_file,$destination);
 
         //Call function to insert and track if success or not
-        $isSuccess = $crud->insertAttendees($fname, $lname, $dob, $address,$gender,$destination);
+        $isSuccess = $crud->insertAttendees($fname, $lname, $dob, $address,$gender,$email, $destination);
         $genderName = $crud->getgenderById($gender);
         
         if($isSuccess){
@@ -71,8 +72,10 @@
             <p class="card-text">
                 Address: <?php echo $_POST['address'];  ?>
             </p>
+            <p class="card-text">
+                Email Adress: <?php echo $_POST['email'];  ?>
             </p>
-    
+                
         </div>
     </div>
     

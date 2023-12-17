@@ -31,6 +31,9 @@
         <p class="card-text">
              Address: <?php echo $result['address'];  ?>
         </p>
+        <p class="card-text">
+            Email Adress: <?php echo $result['email'];  ?>
+        </p>
       
     </div>
 </div>
