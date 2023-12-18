@@ -5,13 +5,13 @@
     require_once 'includes/auth_check.php';
     require_once 'db/conn.php'; 
 
-    // Get attendee by id
+
     if(!isset($_GET['id'])){
         include 'includes/errormessage.php';
         
     } else{
         $id = $_GET['id'];
-        $result = $crud->getAttendeeDetails($id);
+        $result = $crud->getclientDetails($id);
     
     
 ?>

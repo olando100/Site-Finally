@@ -6,7 +6,7 @@
     require_once 'db/conn.php'; 
 
     // Get all attendees
-    $results = $crud->getAttendees();
+    $results = $crud->getclient();
 ?>
 
 

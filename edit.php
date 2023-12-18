@@ -16,7 +16,7 @@
     }
     else{
         $id = $_GET['id'];
-        $attendee = $crud->getAttendeeDetails($id);
+        $attendee = $crud->getclientDetails($id);
     
 
     
