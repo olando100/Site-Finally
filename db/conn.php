@@ -6,12 +6,6 @@
      $pass = '';
      $charset = 'utf8mb4';
 
-    //Remote Database Connection
-  //  $host = 'remotemysql.com';
-  //  $db = 'NC1HPsPMvA';
-  //  $user = 'NC1HPsPMvA';
-   // $pass = 'rqUDdNcsXH';
-   // $charset = 'utf8mb4';
                 //Remote Database Connection
             //  $host = 'remotemysql.com';
             //  $db = 'NC1HPsPMvA';
